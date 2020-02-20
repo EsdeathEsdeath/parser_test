@@ -1,5 +1,9 @@
 import psycopg2
 from contextlib import closing
+import csv
+
+
+def treatment_csv(data):
 
 
 conn = psycopg2.connect(dbname='avitodb', user='vlad', password='', host='localhost')
