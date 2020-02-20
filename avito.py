@@ -54,7 +54,7 @@ def main():
     url = 'https://www.avito.ru/moskva/audio_i_video/muzykalnye_tsentry_magnitoly?q=проигрыватель+винила&p=1'
     base_url = 'https://www.avito.ru/moskva/audio_i_video/muzykalnye_tsentry_magnitoly?'
     page_part = 'p='
-    query_part = 'q=проигрыватель+винила'
+    query_part = 'q=проигрыватель+винила&'
     total_pages = get_total_pages(get_html(url))
     for i in range(1, 3):
         url_gen = base_url + query_part + page_part + str(i)
